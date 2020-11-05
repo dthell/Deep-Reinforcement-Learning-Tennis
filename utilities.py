@@ -24,9 +24,6 @@ def transpose_to_tensor(input_list):
 def to_tensor(input_list):
     return [torch.tensor(x, dtype=torch.float).to(device) for x in input_list]
 
-def to_tensor(input_list):
-    return [torch.tensor(x, dtype=torch.float).to(device) for x in input_list]
-
 def flatten(list_of_list):
     return [item for sublist in list_of_list for item in sublist]
 
